@@ -1,0 +1,21 @@
+.sidebar__section {
+    position: fixed;
+    z-index: 9999;
+    width: 240px;
+    height: 100vh;
+    box-shadow: 3px 0px #8888880D;
+    
+    .sidebar__item {
+        margin-bottom: 10px;
+        padding: 8px 12px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar__section {
+        width: 100%;
+        background-color: #ffff;
+    }
+}

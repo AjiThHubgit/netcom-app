@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+}
+
+body {
+    background-color: #F5F5F5;
+    font-family: "Manrope", sans-serif;
+}
+
+/* .layout__grid__container {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 20px;
+} */
+
+.dashboard__section {
+    margin-left: 260px;
+}
+
+.portrait__hide {
+    display: block;
+}
+
+.mob__hide {
+    display: block;
+}
+
+.mob__show {
+    display: none;
+}
+
+.action_btn {
+    padding: 10px;
+    height: 35px;
+    outline: none;
+    border: none;
+    background-color: #0876F8;
+    border-radius: 8px;
+    color: white;
+}
+
+.action_outline__btn {
+    padding: 7px;
+    height: 35px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid #FFFFFF66;
+    color: white;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.lab__module__input {
+    width: 555px;
+    border: none;
+    height: 35px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Card Styling  start*/
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-left: 30px;
+    position: relative;
+    bottom: 90px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 490px;
+    background-color: #ffff;
+    margin-right: 15px;
+    padding: 15px;
+    box-shadow: 0px 3px 6px #E2E2E2;
+    border-radius: 12px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.card-content {
+    flex-grow: 1;
+}
+
+.card-title {
+    font-size: 16;
+    color: #003366;
+}
+
+.card-subtitle {
+    margin-top: 10px;
+    font-size: 12;
+    color: #003366;
+}
+
+/* Action styles */
+.card-actions {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.shared-img {
+    margin-left: 15px;
+}
+
+.card-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .card-container {
+        padding: 15px;
+        margin-left: 15px;
+        bottom: 60px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: none;
+        margin-right: 0;
+    }
+}
+
+/* Card Styling end*/
+
+/* LabModuleSection.css */
+
+/* Container styles */
+.lab-module-container {
+    margin-left: 30px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 100px;
+}
+
+/* Card styles */
+.lab-module-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background-color: #ffff;
+    margin-right: 15px;
+    padding: 20px;
+    box-shadow: 0px 3px 6px #E2E2E2;
+    border-radius: 12px;
+    color: #000;
+    width: 100%;
+    max-width: 1000px;
+    /* Set a max width for the card */
+}
+
+/* Text section styles */
+.lab-module-text {
+    padding: 45px;
+}
+
+.lab-module-title {
+    font-size: 20px;
+    color: #181A53;
+    font-weight: 800;
+}
+
+/* Input section styles */
+.lab-module-input-section {
+    display: flex;
+    align-items: center;
+    background-color: #E2E2E2;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.lab-module-label {
+    font-weight: 700;
+    color: #003366;
+    /* Replace with your theme color */
+}
+
+.lab-module-input-wrapper {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.lab-module-input {
+    width: 555px;
+    box-sizing: border-box;
+    margin-right: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+}
+
+.lab-module-btn {
+    padding-inline: 25px;
+}
+
+/* Expiration text styles */
+.lab-module-expiration {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #585858;
+}
+
+.instruction__container {
+    display: flex;
+    position: relative;
+    bottom: 100px;
+}
+
+.fa-star {
+    font-size: 17px;
+    /* Adjust size as needed */
+    color: #e0e0e0;
+    /* Light grey color for unfilled stars */
+}
+
+.checked {
+    color: orange;
+    /* Color for filled stars */
+}
+
+.half-star {
+    position: relative;
+    display: inline-block;
+}
+
+.half-star:before {
+    content: '\f005';
+    /* Font Awesome star icon */
+    font-family: 'FontAwesome';
+    color: orange;
+    position: absolute;
+    left: 0;
+    width: 50%;
+    overflow: hidden;
+}
+
+.half-star .fa-star {
+    color: #e0e0e0;
+    /* Light grey for the remaining part of the star */
+}
+
+.start_button {
+    width: 170px;
+    border: none;
+    background: #F1F1F1;
+    padding: 8px;
+    border-radius: 15px;
+}
+
+.register__btn {
+    border: 1px solid #0876F8;
+    background: transparent;
+    width: 100%;
+    color: #0876F8;
+    padding: 8px;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 1280px) {
+    .lab-module-input {
+        width: 380px;
+    }
+
+    .instruction__container {
+        flex-direction: column;
+    }
+}
+
+
+/* Responsive Styles */
+
+@media (max-width: 1280px) {
+    .lab-module-input {
+        width: 270px;
+        margin-bottom: 15px;
+
+    }
+
+    .lab-module-input-wrapper {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1024px) {
+    .lab-module-container {
+        margin-left: 15px;
+        padding: 15px;
+    }
+
+    .d-flex.align-center.portrait__hide {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .lab-module-container {
+        margin-left: 15px;
+        padding: 15px;
+    }
+
+    .lab-module-card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+        gap: 15px;
+        max-width: 100%;
+        transform: translateY(-55px);
+    }
+
+    .lab-module-text {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .w-70 {
+        width: 100%;
+    }
+
+    .instruction__container {
+        margin:40px 10px;
+    }
+    .lab-module-container {
+        margin-left: 10px;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        bottom: 0;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* .layout__grid__container {
+        grid-template-columns: 1fr;
+    } */
+
+    .d-flex.align-center.mob__hide {
+        display: none;
+    }
+
+    .mob__hide {
+        display: none;
+    }
+
+    .mob__show {
+        display: block;
+    }
+
+    .dashboard__section {
+        padding: 20px;
+        margin-left: 0px;
+    }
+
+    .ml-260 {
+        margin-left: 0;
+    }
+}
+
+/* InstructionNotes.css */
+
+.p-20 {
+    padding: 20px;
+}
+
+.ml-30 {
+    margin-left: 30px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.card {
+    background-color: #ffffff;
+    box-shadow: 0px 3px 6px #e2e2e2;
+    border-radius: 12px;
+    color: #000;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.card-header {
+    display: flex;
+    gap: 10px;
+}
+
+.card-header button {
+    background-color: transparent;
+    color: #888888;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.card-header button.active {
+    border-bottom: 4px solid #0876F8;
+    background-color: #ffffff;
+    color: #0876F8;
+}
+/* 
+.card-content {
+    margin-top: 5px;
+} */
+
+.content-border {
+    padding: 15px;
+}
+
+.content-list {
+    list-style-type: lower-alpha;
+    /* List style for a, b, c, ... */
+}
+
+.content-list li {
+    margin-bottom: 5px;
+}
+
+.heading__semi{
+    color: #181A53;
+    font-weight: 600;
+}
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .card-header {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .content-border {
+        padding: 10px;
+    }
+}

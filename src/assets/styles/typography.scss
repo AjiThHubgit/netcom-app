@@ -1,0 +1,121 @@
+$primary-color: #0876F8;
+$white: #ffff;
+$success-color: #099A83;
+
+.body__1 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.para__regular {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.para__semi-regular {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.para__medium {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.para__semi__bold {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.para__small {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.color__181A53 {
+    color: #181A53;
+}
+
+.text-white {
+    color: $white;
+}
+
+.text-dar-blue{
+    color:#181A53;
+}
+
+.success {
+    background-color: $success-color;
+}
+
+.btn__primary {
+    background-color: $primary-color;
+    color: $white
+}
+
+//SPACING STYLING START
+.p-20 {
+    padding: 20px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.ml-15 {
+    margin-left: 10px;
+}
+
+.ml-30 {
+    margin-left: 30px;
+}
+
+.mr-15 {
+    margin-right: 15px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-15 {
+    margin-top: 15px
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.ml-260 {
+    margin-left: 240px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.pb-180 {
+    padding-bottom: 170px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+//SPACING STYLING END
+
+
+@media only screen and (max-width: 768px) {
+
+    .ml-260 {
+        margin-left: 0;
+    }
+    .ml-30 {
+        margin-left: 0;
+    }
+}

@@ -17,19 +17,19 @@ const AppBar = ({openMenu, setOpenMenu}) => {
 					<div className='d-flex align-center'><img src={companyLogo} alt="NetCom Logo" /></div>
 					<div className='d-flex align-center portrait__hide' style={{ border: '1px solid #E2E2E2', borderRadius: '8px', padding: '5px 10px' }}>
 						<img style={{ marginRight: '10px' }} src={searchImg} alt="searchImg" />
-						<input style={{ width: '380px', height: '25px', border: 'none', outline: 'none' }} type="search" placeholder='Search' />
+						<input className='search__item' style={{ width: '380px', height: '25px', border: 'none', outline: 'none' }} type="search" placeholder='Search' />
 					</div>
 				</div>
 				<div className={`d-flex align-center gap-30 mob__hide ${openMenu ? 'mob__show' : ''}`}>
-					<div><img src={notificationImg} alt="notificationImg" /></div>
-					<div><img src={cartImg} alt="cartImg" /></div>
+					<div><img className='cp' src={notificationImg} alt="notificationImg" /></div>
+					<div><img className='cp' src={cartImg} alt="cartImg" /></div>
 					<div className='d-flex align-center'>
 						<img src={profileImg} alt="profileImg" /> <span className='para__semi__bold ml-10'>R. Spencer</span>
-						<div className='profile__down_icon ml-15'><img src={downArrowIcon} alt="downArrowIcon" /></div>
+						<div className='profile__down_icon ml-15'><img className='cp' src={downArrowIcon} alt="downArrowIcon" /></div>
 					</div>
 				</div>
 				<div onClick={handleOnClick} className='mob__show'>
-					<img src={!openMenu ? closeIcon : menuIcon} alt="menuIcon" />
+					<img className='cp' src={!openMenu ? closeIcon : menuIcon} alt="menuIcon" />
 				</div>
 			</div>
 		</section>

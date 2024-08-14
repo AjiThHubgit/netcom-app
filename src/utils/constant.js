@@ -16,6 +16,7 @@ import TickMark from '../assets/images/tick.png'
 import QrScaner from '../assets/images/qrscan.png'
 import Certification from '../assets/images/certification.png'
 import SharedImg from '../assets/images/shared.png'
+import DownArrowWhite from '../assets/images/arrow_down_white.svg';
 
 const commonImgObj = {
     companyLogo: NetComLogo,
@@ -28,7 +29,8 @@ const commonImgObj = {
     menuIcon: MenuIcon,
     closeIcon: CloseIcon,
     arrowBackIcon: ArrowBack,
-    SharedImg: SharedImg
+    SharedImg: SharedImg,
+    DownArrowWhite: DownArrowWhite
 }
 
 const sideMenuItems = [

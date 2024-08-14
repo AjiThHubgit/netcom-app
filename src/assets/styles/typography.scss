@@ -2,35 +2,47 @@ $primary-color: #0876F8;
 $white: #ffff;
 $success-color: #099A83;
 
+.heading__1 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+
 .body__1 {
     font-size: 20px;
     font-weight: 600;
+    letter-spacing: 0.4px;
 }
 
 .para__regular {
     font-size: 14px;
     font-weight: 400;
+    letter-spacing: 0.4px;
 }
 
 .para__semi-regular {
     font-size: 14px;
     font-weight: 600;
+    letter-spacing: 0.4px;
 }
 
 
 .para__medium {
     font-size: 16px;
     font-weight: 500;
+    letter-spacing: 0.4px;
 }
 
 .para__semi__bold {
     font-size: 16px;
     font-weight: 600;
+    letter-spacing: 0.4px;
 }
 
 .para__small {
     font-size: 12px;
     font-weight: 400;
+    letter-spacing: 0.4px;
 }
 
 .color__181A53 {

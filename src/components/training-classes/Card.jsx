@@ -13,9 +13,9 @@ const Card = () => {
                             <p className='card-title body__1'>{item.title}</p>
                             <p className='card-subtitle'>{item.subtitle}</p>
                             <div className='card-actions'>
-                                <button className='action_btn'>{item.btnText}</button>
+                                <button className='action_btn cp'>{item.btnText}</button>
                                 {item.sharedImgFlag &&
-                                    <div className='shared-img'><img src={SharedImg} alt={item.title} /></div>
+                                    <div className='shared-img'><img src={SharedImg} alt={item.title} className='cp' /></div>
                                 }
                             </div>
                         </div>
